@@ -27,7 +27,7 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: hsl(300, 24%, 96%);
+    background-color: #fff;
     position: relative;
 }
 
@@ -53,8 +53,13 @@ main {
     margin:75px 25px;
     margin-bottom: 40px;
 }
+
+.text-rating {
+    margin-bottom: 8px;
+}
 .text {
     text-align: center;
+    margin-bottom: 8px;
 }
 .text h1 {
     color:hsl(300, 43%, 22%);
@@ -128,9 +133,198 @@ main {
     height: auto;
 }
 
+.pattern-top-desktop, .pattern-bottom-desktop {
+    display: none;
+}
+
 @media  screen and (max-width: 375px) {
     .pattern-top, .pattern-bottom {
         display: none;
     }
-    
 }
+
+/** TABLET **/
+
+@media  screen and (min-width: 460px) {
+    .card {
+        margin:75px 18%;
+    }
+}
+
+@media  screen and (min-width: 630px) {
+    .card {
+        margin:75px 22%;
+    }
+}
+
+@media  screen and (min-width: 900px) {
+    .card {
+        margin:75px 26%;
+    }
+}
+
+@media  screen and (min-width: 972px) {
+    .card {
+        margin:75px 32%;
+    }
+}
+
+/** DESKTOP **/
+
+@media  screen and (min-width: 1320px) {
+    body {
+        height: 100vh;
+        overflow-x: auto;
+    }
+
+    .pattern-top, .pattern-bottom {
+        display: none;
+    }
+
+    .pattern-top-desktop, .pattern-bottom-desktop {
+        display: inline-block;
+    }
+
+    .pattern-top-desktop, .pattern-bottom-desktop{
+        position: absolute;
+    }
+    
+    .pattern-top-desktop {
+        top:0;
+        left:0;
+    }
+    
+    .pattern-bottom-desktop{
+        bottom:0;
+        right:0;
+    }
+    
+    main {
+        position: relative;
+    }
+    
+    .card {
+        margin:100px 110px;
+    }
+    /** Text Rating **/
+    .text-rating {
+        margin-bottom: 60px;
+        display:flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding:0;
+    }
+    
+    .text {
+        text-align: left;
+        margin-bottom: 0;
+        display: flex;
+        flex-direction: column;
+        align-items:flex-start;
+        justify-content: center;
+        margin-right:160px;
+    }
+    
+    .text h1 {
+        font-size: 50px;
+        font-weight: 700;
+        line-height: 53px;
+        margin:0;
+        margin-right: 50px;
+    }
+    
+    .text p {
+        font-size: 19px;
+        margin-top:20px;
+        margin-right: 20px;
+        line-height: 30px;
+        text-align: left;
+    }
+    
+    .rating {
+        margin:0px;
+        width:auto;
+        position: relative;
+    }
+    
+    .rate {
+        padding: 15px 0;
+        padding-top:25px;
+        width:530px;
+        margin-bottom:25px;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: baseline;
+        border-radius: 10px;
+        position: relative;
+    }
+
+    .rate-1 {
+        left:-100px;
+    }
+
+    .rate-2 {
+        left:-50px;
+    }
+    
+    .star {
+        margin: 0px 2px;
+        width:22px;
+        height:auto;
+    }
+    .stars {
+        padding:0 30px;
+    }
+    .rate h4 {
+        font-size: 20px;
+    }
+    /** Reviews **/
+    .reviews {
+        display: flex;
+        flex-direction: row;
+
+    }
+    .review {
+        margin-bottom: 0px ;
+        padding:50px 35px;
+        margin-right:20px;
+        position:relative;
+    }
+
+    .review-2 {
+        top:30px;
+    }
+
+    .review-3 {
+        margin-right: 0;
+        top:60px;
+    }
+
+    .review p {
+        font-size: 18px;
+        line-height: 28px;
+        margin-top:15px;
+    }
+
+    .about {
+        margin-bottom: 15px;
+    }
+
+    .about h5 {
+        font-size: 18px;
+        margin-bottom: 3px;
+    }
+
+    .about small {
+        color: hsl(303, 10%, 53%) ;
+        font-size: 16px;
+    }
+    .about img {
+        border-radius: 50%;
+        margin-right: 30px;
+        width:70px;
+    }
+
+ 
+}
+
