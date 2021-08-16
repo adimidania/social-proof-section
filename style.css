@@ -137,6 +137,27 @@ main {
     display: none;
 }
 
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+
+
 @media  screen and (max-width: 375px) {
     .pattern-top, .pattern-bottom {
         display: none;
@@ -173,8 +194,8 @@ main {
 
 @media  screen and (min-width: 1320px) {
     body {
-        height: 100vh;
-        overflow-x: auto;
+        height:100vh;
+        overflow-x: hidden;
     }
 
     .pattern-top, .pattern-bottom {
@@ -208,7 +229,7 @@ main {
     }
     /** Text Rating **/
     .text-rating {
-        margin-bottom: 60px;
+        margin-bottom: 50px;
         display:flex;
         flex-direction: row;
         justify-content: space-between;
@@ -280,6 +301,7 @@ main {
     }
     /** Reviews **/
     .reviews {
+        margin-top:0;
         display: flex;
         flex-direction: row;
 
@@ -287,17 +309,18 @@ main {
     .review {
         margin-bottom: 0px ;
         padding:50px 35px;
+        padding-bottom: 40px;
         margin-right:20px;
         position:relative;
     }
 
     .review-2 {
-        top:30px;
+        top:25px;
     }
 
     .review-3 {
         margin-right: 0;
-        top:60px;
+        top:50px;
     }
 
     .review p {
@@ -327,4 +350,5 @@ main {
 
  
 }
+
 
