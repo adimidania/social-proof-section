@@ -1,4 +1,4 @@
-# Stats preview card component 
+# Social proof section
 
 ## 📝 About the challenge
 
